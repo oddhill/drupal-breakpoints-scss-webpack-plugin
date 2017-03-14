@@ -1,5 +1,8 @@
 # Drupal breakpoints scss webpack plugin
 
+[![Build Status](https://travis-ci.org/oddhill/drupal-breakpoints-scss-webpack-plugin.svg?branch=master)](https://travis-ci.org/oddhill/drupal-breakpoints-scss-webpack-plugin)
+[![Coverage Status](https://coveralls.io/repos/github/oddhill/drupal-breakpoints-scss-webpack-plugin/badge.svg?branch=master)](https://coveralls.io/github/oddhill/drupal-breakpoints-scss-webpack-plugin?branch=master)
+
 This Webpack plugins lets you turn the breakpoints YAML-file from a Drupal theme into variables in a scss-file.
 
 To achieve this this the plugin uses the following package [drupal-breakpoints-scss](https://github.com/jenslind/drupal-breakpoints-scss).
