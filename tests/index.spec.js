@@ -26,8 +26,10 @@ test('It requires the entry and output option to be defined.', (t) => {
 });
 
 test('It should write breakpoints to the defined output destination.', (t) => {
+  const tempPath = fs.mkdtempSync('/tmp/drupal-breakpoints-scss-webpack-plugin');
+
   const entry = path.resolve(__dirname, './files/breakpoints.yml');
-  const output = path.resolve(__dirname, '../tmp/breakpoints.scss');
+  const output = path.join(tempPath, 'breakpoints.scss');
 
   const options = {
     entry: './files/entry.js',
