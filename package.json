@@ -1,0 +1,38 @@
+{
+  "name": "@oddhill/drupal-breakpoints-scss-webpack-plugin",
+  "version": "1.0.0",
+  "description": "A plugin that will create a scss file with breakpoints from a Drupal theme breakpoints YAML file.",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "breakpoints",
+    "drupal",
+    "sass",
+    "scss"
+  ],
+  "author": "Christoffer Palm <christoffer.palm@oddhill.se>",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc tape ./tests/index.spec.js"
+  },
+  "dependencies": {
+    "drupal-breakpoints-scss": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.8",
+    "@types/tape": "^4.2.29",
+    "@types/webpack": "^2.2.11",
+    "coveralls": "^2.12.0",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "nyc": "^10.1.2",
+    "tape": "^4.6.3",
+    "webpack": "^2.2.1"
+  }
+}
